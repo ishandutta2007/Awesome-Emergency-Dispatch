@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1128" />
+      <stop offset="50%" stop-color="#1c2541" />
+      <stop offset="100%" stop-color="#0b132b" />
+    </linearGradient>
+
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4cc9f0" />
+      <stop offset="50%" stop-color="#4895ef" />
+      <stop offset="100%" stop-color="#7209b7" />
+    </linearGradient>
+
+    <!-- Signal Pulse Animation -->
+    <style>
+      @keyframes pulse {
+        0% { r: 10px; opacity: 0.8; stroke-width: 3px; }
+        50% { r: 60px; opacity: 0.4; stroke-width: 2px; }
+        100% { r: 110px; opacity: 0; stroke-width: 1px; }
+      }
+      @keyframes ping {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.2); opacity: 0.7; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -40; }
+      }
+      .ring-1 { animation: pulse 3s infinite ease-out; }
+      .ring-2 { animation: pulse 3s infinite ease-out 1s; }
+      .ring-3 { animation: pulse 3s infinite ease-out 2s; }
+      .beacon { animation: ping 2s infinite ease-in-out; transform-origin: 150px 150px; }
+      .beacon-2 { animation: ping 2.5s infinite ease-in-out; transform-origin: 1050px 150px; }
+      .flow-line { stroke-dasharray: 8, 8; animation: dash 2s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="15" fill="url(#bg-gradient)" />
+  
+  <!-- Grid overlay -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,50 L 1200,50 M 0,100 L 1200,100 M 0,150 L 1200,150 M 0,200 L 1200,200 M 0,250 L 1200,250" />
+    <path d="M 150,0 L 150,300 M 300,0 L 300,300 M 450,0 L 450,300 M 600,0 L 600,300 M 750,0 L 750,300 M 900,0 L 900,300 M 1050,0 L 1050,300" />
+  </g>
+
+  <!-- Dynamic Radar / Signal Rings (Background / Side accent) -->
+  <g transform="translate(0, 0)">
+    <!-- Left Radar -->
+    <circle cx="150" cy="150" r="10" fill="none" stroke="#f72585" class="ring-1" />
+    <circle cx="150" cy="150" r="10" fill="none" stroke="#4895ef" class="ring-2" />
+    <circle cx="150" cy="150" r="10" fill="none" stroke="#4cc9f0" class="ring-3" />
+    <circle cx="150" cy="150" r="6" fill="#f72585" class="beacon" />
+
+    <!-- Right Radar -->
+    <circle cx="1050" cy="150" r="10" fill="none" stroke="#4cc9f0" class="ring-1" />
+    <circle cx="1050" cy="150" r="10" fill="none" stroke="#f72585" class="ring-2" />
+    <circle cx="1050" cy="150" r="10" fill="none" stroke="#4895ef" class="ring-3" />
+    <circle cx="1050" cy="150" r="6" fill="#4cc9f0" class="beacon-2" />
+
+    <!-- Connecting Signal Wave Lines -->
+    <path d="M 150 150 Q 300 80, 600 150 T 1050 150" fill="none" stroke="#4895ef" stroke-width="2" opacity="0.3" class="flow-line" />
+    <path d="M 150 150 Q 450 220, 750 150 T 1050 150" fill="none" stroke="#f72585" stroke-width="1.5" opacity="0.3" class="flow-line" />
+  </g>
+
+  <!-- Foreground Title and Subtitle -->
+  <g text-anchor="middle">
+    <!-- Icon / Badge above text -->
+    <text x="600" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" fill="#f72585" font-weight="bold" letter-spacing="2">
+      🚨 911 / CAD ECOSYSTEM 🚨
+    </text>
+
+    <!-- Main Title -->
+    <text x="600" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="url(#text-gradient)" letter-spacing="1">
+      Awesome Emergency Dispatch
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="195" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" fill="#e0e1dd" opacity="0.9" letter-spacing="0.5">
+      Curated Computer-Aided Dispatch (CAD), First Responder &amp; Incident Management Software
+    </text>
+
+    <!-- Tech Pills in Sub-header -->
+    <g transform="translate(370, 225)">
+      <rect x="0" y="0" width="130" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="65" y="18" font-family="sans-serif" font-size="12" fill="#38bdf8" font-weight="600" text-anchor="middle">⚡ SaaS CAD</text>
+
+      <rect x="145" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="220" y="18" font-family="sans-serif" font-size="12" fill="#4ade80" font-weight="600" text-anchor="middle">🔓 Open-Source</text>
+
+      <rect x="310" y="0" width="150" height="28" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="385" y="18" font-family="sans-serif" font-size="12" fill="#f43f5e" font-weight="600" text-anchor="middle">🚒 First Responders</text>
+    </g>
+  </g>
+</svg>
