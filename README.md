@@ -4,7 +4,7 @@
 
 <p center align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Emergency-Dispatch"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Emergency-Dispatch?style=flat-square" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Emergency-Dispatch"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Emergency-Dispatch?style=flat-square" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Emergency-Dispatch/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Emergency-Dispatch?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -51,9 +51,9 @@ Below is a comparative breakdown of top commercial Computer-Aided Dispatch (CAD)
 
 ## 🔓 Open-Source Emergency Dispatch Projects
 
-Curated open-source dispatch consoles, CAD systems, and mesh-networked emergency software. Sorted by GitHub star count (descending).
+Curated open-source dispatch consoles, CAD systems, and mesh-networked emergency software. Sorted by GitHub Stars_Count (descending).
 
-| Repository 📦 | GitHub Stars ⭐ | License 📄 | Architecture / Stack 💻 | Key Features & Target Use Cases 🚑 |
+| Repository 📦 | GitHub_Stars ⭐ | License 📄 | Architecture / Stack 💻 | Key Features & Target Use Cases 🚑 |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Resgrid Core](https://github.com/Resgrid/Core)** | [![Resgrid Stars](https://img.shields.io/github/stars/Resgrid/Core?style=social&color=white)](https://github.com/Resgrid/Core/stargazers) | Apache-2.0 | C# / .NET Core, Web & Mobile | **Enterprise Open-Source CAD**: Complete dispatch, unit AVL, shift scheduling, inventory, & mobile responder apps. |
 | **[SnailyCAD v4](https://github.com/SnailyCAD/snaily-cadv4)** | [![SnailyCAD Stars](https://img.shields.io/github/stars/SnailyCAD/snaily-cadv4?style=social&color=white)](https://github.com/SnailyCAD/snaily-cadv4/stargazers) | MIT | TypeScript, Next.js, Node.js, PostgreSQL | **Modern Web CAD/MDT**: Highly customizable dispatch system with emergency call logging, DMV records, and live map integrations. |
